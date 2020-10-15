@@ -17,7 +17,7 @@ def convert_to_resistance(ADC_Value):
 
 def converto_to_volt(ADC_Value):
     cfg = get_default_gpio_cfg()
-    return (ADC_Value * cfg["VREF"] / cfg["ADC_MAX_VALUE"])
+    return ( (ADC_Value * cfg["VREF"] )/ cfg["ADC_MAX_VALUE"])
 
 def sample_adc_values():
     cfg = get_default_gpio_cfg()
