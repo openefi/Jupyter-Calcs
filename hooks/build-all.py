@@ -11,3 +11,4 @@ def main():
     print(process2.communicate())
     return 1
 
+main()
