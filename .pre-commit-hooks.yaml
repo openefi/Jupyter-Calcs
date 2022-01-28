@@ -1,6 +1,6 @@
 - id: build-functions
   name: Build C Functions
-  entry: python ./build-all.py
-  language: script
+  entry: ./build-all.py
+  language: python
   files: \.txt$
   always_run: true
