@@ -5,9 +5,12 @@ repos:
     rev: v3.2.0
     hooks:
       - id: check-ast
+  - repo: local
+    hooks:
       - id: build-functions
         name: Build C Functions
         description: This hook builds OpenEFI calcs
-        entry: build-all
+        entry: python hooks/build-all.py
         language: python
-        types: [text]
+        files: \.txt$
+        always_run: true
