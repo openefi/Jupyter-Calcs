@@ -1,7 +1,7 @@
--   repo: local
-    hooks:
-    -   id: build-functions
-        name: Build C Functions
-        entry: python ./build-all.py
-        language: script
-        files: \.txt$
+- repo: local
+  hooks:
+    - id: build-functions
+      name: Build C Functions
+      entry: python ./build-all.py
+      language: script
+      files: \.txt$
