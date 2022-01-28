@@ -1,4 +1,4 @@
-import subprocess
+import subprocess,time
 
 def main():
     subprocess.call('env')
@@ -9,6 +9,7 @@ def main():
 
     print(process.communicate())
     print(process2.communicate())
+    time.sleep(3)
     return 1
 
 main()
