@@ -9,6 +9,6 @@ def main():
 
     print(process.communicate())
     print(process2.communicate())
-    return 1
+    return 0
 
 main()
