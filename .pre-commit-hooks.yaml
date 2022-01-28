@@ -3,3 +3,4 @@
   entry: python ./build-all.py
   language: script
   files: \.txt$
+  always_run: true
