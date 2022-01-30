@@ -17,5 +17,5 @@ int32_t calc(int32_t adc_value){
      int32_t _t = convert_to_volt(adc_value) /* * 1334 */;
     if (_t > TPS_MAX_A || _t < TPS_MIN_A)
         return 0;
-    return (int32_t)TPS_CALC_A(_t);
+    return (int32_t)TPS_CALC_A(_t  /* * 1.534 */);
 }
